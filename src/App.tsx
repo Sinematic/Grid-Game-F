@@ -1,5 +1,8 @@
-import MapReader from './components/MapReader'
-import maps from "./assets/maps.json"
+import LanguageProvider from "./contexts/LanguageContext"
+import Nav from "./components/Nav"
+import GameBoard from "./components/GameBoard"
+
+import boards from "./assets/boards.json"
 
 import './styles/reset.css'
 import './App.css'
@@ -7,9 +10,14 @@ import './App.css'
 function App() {
 
 	return (
-		<>
-			<MapReader map={maps[0]}/>
-		</>
+		<LanguageProvider>
+
+			<>
+				<Nav />
+				<GameBoard board={boards[0]}/>
+			</>
+
+		</LanguageProvider>
 	)
 }
 

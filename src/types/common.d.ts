@@ -5,6 +5,6 @@ export type MapType = {
     width: number;
     height: number;
     size: number;
-    map: number[];
+    tiles: number[];
     tilesTypes: Tiles
 };

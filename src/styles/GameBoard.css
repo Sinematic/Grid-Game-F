@@ -1,0 +1,10 @@
+.board {
+    max-width: 85vw;
+    max-height: 85vh;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+    display: grid;
+    gap: 10px;
+    margin: auto;
+}
