@@ -11,3 +11,8 @@ nav {
 nav li {
     cursor: pointer;
 }
+
+/*
+Design sélection  de language : 
+Drapeau affiché, au clic ouvre une modale affichant drapeau + langue
+*/
