@@ -19,6 +19,7 @@
     border: 1px solid rgb(162, 158, 158);
     box-sizing: content-box;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .flag {
@@ -31,9 +32,10 @@
 .languages-list {
     position: absolute;
     background-color: #24282C;
-    padding: 4px 9px;
     font-size: 0.9rem;
-    min-width: 120px;
+    min-width: 140px;
+    border: 1px solid #3e454c;
+    border-radius: 5px;
 }
 
 .languages-list > li {
@@ -41,13 +43,23 @@
     flex-direction: row;
     align-items: center;
     gap: 11px;
+    padding: 0px 9px;
     height: 40px;
+}
+
+.languages-list > li:hover {
+    background-color: #3e454c;
 }
 
 .flag-element {
     width: 30px;
 }
 
+.used {
+    font-weight: 500;
+}
+
 .used::after {
     content: "<";
+    font-weight: 500;
 }
