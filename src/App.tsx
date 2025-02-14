@@ -7,6 +7,8 @@ import boards from "./assets/boards.json"
 import './styles/reset.css'
 import './App.css'
 
+const beginnerMap = boards[0]
+
 function App() {
 
 	return (
@@ -14,10 +16,17 @@ function App() {
 
 			<>
 				<Nav />
-				<GameBoard board={boards[0]}/>
+				<GameBoard board={beginnerMap}/>
 			</>
 
 		</LanguageProvider>
+
+		
+/*
+	<Play />
+	? < Profil />
+*/
+
 	)
 }
 

@@ -1,13 +1,12 @@
 .language-picker {
     color: white;
-    background-color: #24282C;
     padding: 15px 25px;
+    width: fit-content;
 }
 
 .flag-container {
     padding: 8px 11px;
     border: 1px solid rgb(193, 189, 189);
-   /* background-color: transparent;*/
     background-color: #24282C;
 }
 
@@ -31,6 +30,7 @@
 
 .languages-list {
     position: absolute;
+    right: 5px;
     background-color: #24282C;
     font-size: 0.9rem;
     min-width: 140px;
