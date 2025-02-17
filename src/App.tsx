@@ -4,26 +4,29 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Nav from "./components/Nav"
 import Home from "./components/pages/Home"
 import Shop from "./components/pages/Shop"
-import Play from "./components/pages/Play"
 
 import './styles/reset.css'
 import './App.css'
+import Profile from "./components/pages/Profile"
+import Play from "./components/pages/Play"
 
 
 function App() {
 
 	return (
 		<Router>
-			
 			<AppProviders>
+
 				<Nav />
+
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/profile" element={<Play />} />
+					<Route path="/profile" element={<Profile />} />
 					<Route path="/shop" element={<Shop />} />
+					<Route path="/play" element={<Play />} />
 				</Routes>
-			</AppProviders>
 
+			</AppProviders>
 		</Router>
 
 	)

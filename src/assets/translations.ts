@@ -1,4 +1,4 @@
-import { LanguagesTypes } from "../types/languages"
+import { LanguagesTypes } from "../types/contexts"
 import FranceFlag from "../assets/images/France-flag.webp"
 import USAFlag from "../assets/images/Unites-States-of-America-flag.webp"
 

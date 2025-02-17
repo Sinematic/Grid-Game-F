@@ -1,0 +1,11 @@
+.play-btn {
+    color: black;
+    background-color: rgb(4, 81, 4);
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}

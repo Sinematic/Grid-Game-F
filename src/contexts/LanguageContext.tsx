@@ -1,5 +1,5 @@
 import { createContext, useState, ReactNode } from "react";
-import { LanguageContextType, LanguageCode } from "../types/languages";
+import { LanguageContextType, LanguageCode } from "../types/contexts";
 
 export const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 

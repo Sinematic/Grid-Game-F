@@ -1,19 +1,15 @@
-import { createContext, useState, ReactNode, SetStateAction } from "react";
+import { createContext, useState, ReactNode } from "react";
+import { GameStatusContextType } from "../types/contexts";
 
-interface PlayingBooleanContextType {
-    playing: boolean;
-    setPlaying: React.Dispatch<SetStateAction<boolean>>
-}
+export const GameStatusContext = createContext<GameStatusContextType | undefined>(undefined)
 
-export const PlayingBooleanContext = createContext<PlayingBooleanContextType | undefined>(undefined)
-
-export default function PlayingBooleanProvider({ children }: { children: ReactNode}) {
+export default function GameStatusProvider({ children }: { children: ReactNode}) {
 
     const [playing, setPlaying] = useState<boolean>(false);
     
     return (
-        <PlayingBooleanContext.Provider value={{ playing, setPlaying }}>
+        <GameStatusContext.Provider value={{ playing, setPlaying }}>
             {children}
-        </PlayingBooleanContext.Provider>
+        </GameStatusContext.Provider>
     )
 }

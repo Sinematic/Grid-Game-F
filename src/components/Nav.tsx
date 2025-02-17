@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 import { NavContent } from "../assets/translations/nav"
 import LanguagePicker from "./LanguagePicker"
+import PlayButton from "./PlayButton"
 
 import "../styles/Nav.css"
 
@@ -20,7 +21,10 @@ export default function Nav() {
                         <Link to={element.link}>{element.value}</Link>
                     </li>)
                 : null}
+
+                <PlayButton />
             </ul> 
+
 
             <LanguagePicker />
         </nav>
