@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, useEffect } from "react";
+import { createContext, useState, ReactNode } from "react";
 import { LanguageContextType, LanguageCode } from "../types/languages";
 
 export const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
