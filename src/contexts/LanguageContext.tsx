@@ -6,10 +6,6 @@ export const LanguageContext = createContext<LanguageContextType | undefined>(un
 export default function LanguageProvider({ children }: { children: ReactNode}) {
 
 	const [language, setLanguage] = useState<LanguageCode>("EN");
-
-    useEffect(() => {
-        console.log(language)
-    }, [language]);
 	
 	return (
 		<LanguageContext.Provider value={{ language, setLanguage }}>

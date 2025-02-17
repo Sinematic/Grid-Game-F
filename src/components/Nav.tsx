@@ -1,14 +1,14 @@
-import "../styles/Nav.css"
-import LanguagePicker from "./LanguagePicker"
+import { useLanguage } from "../hooks/useLanguage"
+import { Link } from "react-router-dom"
 
 import { NavContent } from "../assets/translations/nav"
-import { useLanguage } from "../hooks/useLanguage"
+import LanguagePicker from "./LanguagePicker"
 
+import "../styles/Nav.css"
 
 export default function Nav() {
 
     const language = useLanguage().language
-    console.log(language)
 
     const links = NavContent.links
 
@@ -17,7 +17,7 @@ export default function Nav() {
             <ul>
                 {links ? links[language].map((element, index) => 
                     <li key={index}>
-                        <link href={element.link}/>{element.value}
+                        <Link to={element.link}>{element.value}</Link>
                     </li>)
                 : null}
             </ul> 

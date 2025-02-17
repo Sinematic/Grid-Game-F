@@ -8,10 +8,8 @@ import { useState } from "react"
 
 export default function LanguagePicker() {
 
-
         const { language, setLanguage } = useLanguage()
         const [open, setOpen] = useState(false)
-    
     
         const handleLanguage = (lang: LanguageCode):void => {
     
@@ -20,7 +18,6 @@ export default function LanguagePicker() {
         
         }
 
-        console.log(setOpen)
 
     return (
         <div className="language-picker">

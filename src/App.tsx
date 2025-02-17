@@ -1,33 +1,38 @@
 import LanguageProvider from "./contexts/LanguageContext"
-import Nav from "./components/Nav"
-import GameBoard from "./components/GameBoard"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import boards from "./assets/boards.json"
+import Nav from "./components/Nav"
+import Home from "./components/pages/Home"
+import Play from "./components/pages/Play"
 
 import './styles/reset.css'
 import './App.css'
+import Shop from "./components/pages/Shop"
 
-const beginnerMap = boards[0]
 
 function App() {
 
 	return (
-		<LanguageProvider>
-
-			<>
+		<Router>
+			
+			<LanguageProvider>
 				<Nav />
-				<GameBoard board={beginnerMap}/>
-			</>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/profile" element={<Play />} />
+					<Route path="/shop" element={<Shop />} />
+				</Routes>
+			</LanguageProvider>
 
-		</LanguageProvider>
+		</Router>
+
+	)
+}
+
+export default App
 
 		
 /*
 	<Play />
 	? < Profil />
 */
-
-	)
-}
-
-export default App
