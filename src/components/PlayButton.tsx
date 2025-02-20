@@ -10,6 +10,14 @@ export default function PlayButton() {
     const gameStatus = useGameStatus().playing
 
     const handleGameStatus = () => {
+        /**
+         * Il faudra envoyer vérification back du statut du joueur
+         * Interdire le changement de page si le joueur est en partie 
+         * (liens nav bloqués temporairement)
+         * Initialiser partie, charger une carte
+         * Réfléchir aux mécaniques de jeu : le joueur place-t-il ses monstres 
+         * OU le jeu sélectionne X emplacements pour les monstres de chaque équipe ?
+         */
         if(!gameStatus) {
             console.log("not playing")
         }
