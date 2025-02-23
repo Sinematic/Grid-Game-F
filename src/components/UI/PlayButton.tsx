@@ -7,7 +7,8 @@ import "../../styles/UI/PlayButton.css"
 export default function PlayButton() {
 
     const language = useLanguage().language
-    const gameStatus = useGameStatus().status
+    const gameStatus = useGameStatus()
+    const status = gameStatus.status
 
     const handleGameStatus = () => {
         /*
@@ -19,17 +20,22 @@ export default function PlayButton() {
          * OU le jeu sélectionne X emplacements pour les monstres de chaque équipe ?
         */
 
-        if(gameStatus === "online") {
-            console.log("not playing")
+        if(status === "online") {
+            gameStatus.setStatus("in queue")
+        } else if (status === "in queue") {
+            gameStatus.setStatus("online")
         }
     }
 
     return (
         <button className={[
             "play-btn",
-            gameStatus === "online" ? "online" : "in queue"
+            status === "online" ? "online" : "in-queue"
         ].join(' ')} onClick={() => handleGameStatus()}>
-            {PlayContent.playButton.value[language].toUpperCase()}
+            {status === "online" 
+                ? PlayContent.playButton.value[language][0].toUpperCase()
+                : PlayContent.playButton.value[language][1].toUpperCase()
+            }
         </button>
     )
 }

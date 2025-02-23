@@ -1,12 +1,12 @@
 .play-btn {
-    width: 120px;
+    width: 130px;
     color: black;
     padding: 10px 16px;
     outline: none;
     border: none;
     color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 800;
     border-radius: 5px;
 }
 

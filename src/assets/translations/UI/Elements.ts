@@ -1,8 +1,8 @@
 export const PlayContent = {
     playButton: {
         value: {
-            EN: "Play",
-            FR: "Jouer",
+            EN: ["Play", "Cancel"],
+            FR: ["Jouer", "Annuler"],
         }
     }
 }
