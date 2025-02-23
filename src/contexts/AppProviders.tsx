@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import LanguageProvider from "./LanguageContext";
-import GameStatusProvider from "./PlayingContext";
+import GameStatusProvider from "./GameStatusContext";
 
 interface AppProvidersProps {
     children: ReactNode

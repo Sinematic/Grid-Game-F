@@ -1,8 +1,8 @@
-import { PlayContent } from "../../assets/translations/UI/Elements";
-import { useLanguage } from "../../hooks/useLanguage";
-import { useGameStatus } from "../../hooks/useGameStatus";
+import { PlayContent } from "../assets/translations/UI/Elements";
+import { useLanguage } from "../hooks/useLanguage";
+import { useGameStatus } from "../hooks/useGameStatus";
 
-import "../../styles/UI/PlayButton.css"
+import "../styles/PlayButton.css"
 
 export default function PlayButton() {
 
@@ -25,10 +25,7 @@ export default function PlayButton() {
     }
 
     return (
-        <button className={[
-            "play-btn",
-            gameStatus === "online" ? "online" : "in queue"
-        ].join(' ')} onClick={() => handleGameStatus()}>
+        <button className="play-btn" onClick={() => handleGameStatus()}>
             {PlayContent.playButton.value[language].toUpperCase()}
         </button>
     )

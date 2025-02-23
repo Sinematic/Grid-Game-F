@@ -1,11 +1,19 @@
 .play-btn {
+    width: 120px;
     color: black;
-    background-color: rgb(4, 81, 4);
     padding: 10px 16px;
     outline: none;
     border: none;
     color: white;
     font-size: 1.2rem;
-    border-radius: 5px;
     font-weight: 500;
+    border-radius: 5px;
+}
+
+.online {
+    background-color: rgb(4, 81, 4);
+}
+
+.in-queue {
+    background-color: orange;
 }

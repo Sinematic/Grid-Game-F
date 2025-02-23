@@ -15,5 +15,5 @@ export type status = "online" | "in queue" | "in game"
 
 export interface GameStatusContextType {
     status: status;
-    setPlaying: React.Dispatch<SetStateAction<boolean>>
+    setStatus: React.Dispatch<SetStateAction<status>>
 }

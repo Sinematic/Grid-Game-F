@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { GameStatusContext } from "../contexts/PlayingContext";
+import { GameStatusContext } from "../contexts/GameStatusContext";
 
 import { ErrorMessages } from "../assets/translations/errors";
 

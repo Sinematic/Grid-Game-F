@@ -12,10 +12,8 @@ export default function LanguagePicker() {
         const [open, setOpen] = useState(false)
     
         const handleLanguage = (lang: LanguageCode):void => {
-    
             if(lang === language) return
-            else setLanguage(lang)
-        
+            else setLanguage(lang)   
         }
 
 
