@@ -11,7 +11,9 @@ export type LanguageContextType = {
     setLanguage: (lang: LanguageCode) => void;
 }
 
+export type status = "online" | "in queue" | "in game"
+
 export interface GameStatusContextType {
-    playing: boolean;
+    status: status;
     setPlaying: React.Dispatch<SetStateAction<boolean>>
 }

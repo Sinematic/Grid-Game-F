@@ -2,8 +2,8 @@ import { useLanguage } from "../hooks/useLanguage"
 import { Link } from "react-router-dom"
 
 import { NavContent } from "../assets/translations/nav"
-import LanguagePicker from "./LanguagePicker"
-import PlayButton from "./PlayButton"
+import LanguagePicker from "./UI/LanguagePicker"
+import PlayButton from "./UI/PlayButton"
 
 import "../styles/Nav.css"
 

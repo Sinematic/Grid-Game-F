@@ -1,8 +1,8 @@
-import { languages } from "../assets/translations"
-import { useLanguage } from "../hooks/useLanguage"
+import { languages } from "../../assets/translations"
+import { useLanguage } from "../../hooks/useLanguage"
 
-import { LanguageCode } from "../types/contexts"
-import "../styles/LanguagePicker.css"
+import { LanguageCode } from "../../types/contexts"
+import "../../styles/UI/LanguagePicker.css"
 import { useState } from "react"
 
 
